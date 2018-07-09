@@ -1,4 +1,4 @@
-MainDevice = require('../mainDevice');
+/*MainDevice = require('../mainDevice');
 
 class WashingMachine extends MainDevice {
     constructor (room, power, weight, mode) {
@@ -8,3 +8,4 @@ class WashingMachine extends MainDevice {
 }
 
 module.exports = WashingMachine;
+*/
