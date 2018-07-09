@@ -4,7 +4,7 @@ class MainDevice {
         this.power = power;
         this.weight = weight;
         this.electricityGrid = electricityGrid;
-        this.isTurnedOn = false;
+        this.isTurnedOn = isTurnedOn;
     }
 };
 module.exports = MainDevice;

@@ -1,9 +1,9 @@
 MainDevice = require('../mainDevice');
 
 class WashingMachine extends MainDevice {
-    constructor (room, power, weight, mode) {
-        super(room, room, power, weight);
-        this.mode = [];
+    wmMode (mode) {
+        //super(room, room, power, weight);
+        this.mode = mode;
     }
 }
 
