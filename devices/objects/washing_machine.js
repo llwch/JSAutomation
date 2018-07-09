@@ -1,4 +1,4 @@
-/*MainDevice = require('../mainDevice');
+MainDevice = require('../mainDevice');
 
 class WashingMachine extends MainDevice {
     wmMode (mode) {

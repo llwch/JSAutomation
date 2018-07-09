@@ -1,10 +1,10 @@
 class MainDevice {
-    deviceMode(room, power, weight, electricityGrid, isTurnedOn ) {
+    constructor(room, power, weight, isPowerOn, isTurnedOn ) {
         this.room = room;
         this.power = power;
         this.weight = weight;
-        this.electricityGrid = electricityGrid;
-        this.isTurnedOn = isTurnedOn;
+        this.isPowerOn = isPowerOn === 'false' ? true : false;
+        this.isTurnedOn = isTurnedOn === 'false' ? true : false;
     }
 };
 module.exports = MainDevice;
