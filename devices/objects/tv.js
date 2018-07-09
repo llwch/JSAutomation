@@ -1,4 +1,4 @@
-MainDevice = require('../mainDevice');
+/*MainDevice = require('../mainDevice');
 
 class TV extends MainDevice {
     tvMode (numberofChannels) {
