@@ -1,10 +1,10 @@
-MainDevice = require('../mainDevice');
+const MainDevice = require('../mainDevice');
 
 class TV extends MainDevice {
-    tvMode (numberofChannels) {
-        //super(room, room, power, weight);
+    constructor (room, power, weight, isPowerOn, isTurnedOn, numberofChannels) {
+        super(room, power, weight, isPowerOn, isTurnedOn);
         this.numberofChannels = numberofChannels;
     }
-}
+};
 
 module.exports = TV;

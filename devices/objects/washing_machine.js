@@ -1,10 +1,10 @@
-MainDevice = require('../mainDevice');
+const MainDevice = require('../mainDevice');
 
 class WashingMachine extends MainDevice {
-    wmMode (mode) {
-        //super(room, room, power, weight);
+    constructor (room, power, weight, isPowerOn, isTurnedOn, mode) {
+        super(room, power, weight, isPowerOn, isTurnedOn);
         this.mode = mode;
     }
-}
+};
 
 module.exports = WashingMachine;
