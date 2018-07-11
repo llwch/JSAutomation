@@ -1,8 +1,10 @@
-export default class MainDevice {
-    constructor(room, power, weight, electricityGrid, isTurnedOn ) {
+class MainDevice {
+    constructor(room, power, weight, isPowerOn, isTurnedOn ) {
         this.room = room;
         this.power = power;
-        this.electricityGrid = electricityGrid;
-        this.isTurnedOn = false;
+        this.weight = weight;
+        this.isPowerOn = isPowerOn !== 'false' ? true : false;
+        this.isTurnedOn = isTurnedOn !== 'false' ? true : false;
     }
 };
+module.exports = MainDevice;
