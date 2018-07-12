@@ -1,8 +1,8 @@
 const MainDevice = require('../mainDevice');
 
 class Fan extends MainDevice {
-    constructor (room, power, weight, isPowerOn, isTurnedOn, fanSpeed) {
-        super(room, power, weight, isPowerOn, isTurnedOn);
+    constructor (name, room, power, weight, isPowerOn, isTurnedOn, fanSpeed) {
+        super(name, room, power, weight, isPowerOn, isTurnedOn);
         this.fanSpeed = fanSpeed;
     }
 };

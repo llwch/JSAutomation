@@ -1,8 +1,8 @@
 const MainDevice = require('../mainDevice');
 
 class WashingMachine extends MainDevice {
-    constructor (room, power, weight, isPowerOn, isTurnedOn, mode) {
-        super(room, power, weight, isPowerOn, isTurnedOn);
+    constructor (name, room, power, weight, isPowerOn, isTurnedOn, mode) {
+        super(name, room, power, weight, isPowerOn, isTurnedOn);
         this.mode = mode;
     }
 };

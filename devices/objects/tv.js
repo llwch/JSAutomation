@@ -1,8 +1,8 @@
 const MainDevice = require('../mainDevice');
 
 class TV extends MainDevice {
-    constructor (room, power, weight, isPowerOn, isTurnedOn, numberofChannels) {
-        super(room, power, weight, isPowerOn, isTurnedOn);
+    constructor (name, room, power, weight, isPowerOn, isTurnedOn, numberofChannels) {
+        super(name, room, power, weight, isPowerOn, isTurnedOn);
         this.numberofChannels = numberofChannels;
     }
 };

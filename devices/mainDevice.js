@@ -1,5 +1,6 @@
 class MainDevice {
-    constructor(room, power, weight, isPowerOn, isTurnedOn ) {
+    constructor(name, room, power, weight, isPowerOn, isTurnedOn ) {
+        this.name = name;
         this.room = room;
         this.power = power;
         this.weight = weight;
