@@ -5,7 +5,7 @@ const WashingMachine = require('../objects/washing_machine');
 function Executor (){
 
     let fan = new Fan ('Fan #1', 'bedroom', 900, 1400, false, false, 9000);
-    let tv = new TV ('TV #1','main room', 111, 1222, false, false, 90);
+    let tv = new TV ('TV #1','main room', 111, 1222, false, false, 200);
     let wm = new WashingMachine ('WM #1', 'bathroom', 10000, 1400, false, false, 'Soft');
     
     let devices = [fan, tv, wm];
@@ -36,15 +36,23 @@ function Executor (){
     };
     
     //по нескольким параметрам
-    function filterByPowerAndTurnON (device){
-        return devices.isTurnedOn == true && devices.power >= 100;
+    function filterByPowerAndTurnON (devices){
+        let filterResult = [];
+        for (j=0; j<devices.length;j++){
+            if (devices[j].isTurnedOn === false && devices[j].power >= 500){
+                filterResult.push(devices[j]);
+            }
+        }
+        return filterResult;
     }
-    let result = devices.filter(filterByPowerAndTurnON);
+    let result = filterByPowerAndTurnON(devices);
+    //devices.filter(filterByPowerAndTurnON);
 
     PowerON('TV #1');
-    console.log(tv.name + ' ' + 'is turned on? -- ' + ' ' + tv.isTurnedOn);
-    console.log(fan.name + ' ' + 'is turned on? -- ' + ' ' + fan.isTurnedOn);
-    console.log(wm.name + ' ' + 'is turned on? -- ' + ' ' + wm.isTurnedOn);
+    //console.log(devices);
+    //console.log(tv.name + ' ' + 'is turned on? -- ' + ' ' + tv.isTurnedOn);
+    //console.log(fan.name + ' ' + 'is turned on? -- ' + ' ' + fan.isTurnedOn);
+    //console.log(wm.name + ' ' + 'is turned on? -- ' + ' ' + wm.isTurnedOn);
     console.log(result);
 };
 
