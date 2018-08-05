@@ -50,9 +50,9 @@ function Executor (){
 
     PowerON('TV #1');
     //console.log(devices);
-    //console.log(tv.name + ' ' + 'is turned on? -- ' + ' ' + tv.isTurnedOn);
-    //console.log(fan.name + ' ' + 'is turned on? -- ' + ' ' + fan.isTurnedOn);
-    //console.log(wm.name + ' ' + 'is turned on? -- ' + ' ' + wm.isTurnedOn);
+    console.log(tv.name + ' ' + 'is turned on? -- ' + ' ' + tv.isTurnedOn);
+    console.log(fan.name + ' ' + 'is turned on? -- ' + ' ' + fan.isTurnedOn);
+    console.log(wm.name + ' ' + 'is turned on? -- ' + ' ' + wm.isTurnedOn);
     console.log(result);
 };
 
